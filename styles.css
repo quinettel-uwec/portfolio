@@ -29,6 +29,7 @@ nav>a{
 body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: large;
+    background-color: black;
 }
 
 p, h1, h3{
@@ -77,16 +78,16 @@ footer{
 }
 
 #ytc{
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .gallery{
     background-color: #C98D91;
-}
-
-.gallery>iframe{
+    display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 
@@ -99,6 +100,47 @@ footer{
     
 .favorites{
     flex-direction: row;
+}
+
+#ytc{
+    float: left;
+    display: flex;
+    flex-direction: row;
+}
+
+#ytc>iframe{
+    padding: 0 7rem 4rem 20rem;
+}
+
+#ytc>p{
+    padding: 0 15rem 0 0;
+}
+
+header>img{
+    display: flex;
+    float: left;
+}
+
+.navs{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+h1{
+    padding-right: 15rem;
+}
+
+#books{
+    padding: 0 2rem 0 0;
+}
+
+#eauclaire{
+    padding: 0 2rem 0 0;
+}
+
+#program{
+    padding: 0 2rem 0 0;
 }
 
 }
