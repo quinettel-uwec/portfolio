@@ -96,11 +96,8 @@ footer{
 
 .flex-container{
     display: flex;
+    flex-flow: column wrap;
 }    
-    
-.favorites{
-    flex-direction: row;
-}
 
 #ytc{
     float: left;
